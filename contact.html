@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <script src="https://kit.fontawesome.com/31e4f9cf68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <!-- header start -->
+    <header class="bg-primary  py-2 border-b border-white">
+        <div class="px-[6%] py-3 lg:py-0">
+            <div class="grid grid-cols-12 gap-2 items-center">
+                <div class="col-span-6 lg:col-span-9 xl:col-span-9">
+                    <div class="flex items-center">
+                        <div class=" pr-5">
+                            <a href="index.html" class="text-white">
+                                <img src="img/logo-white.png" alt="logo" class="max-w-[160px] xl:max-w-[220px]">
+                            </a>
+                        </div>
+                        <!-- nav -->
+                        <nav class="navbar main-menu hidden lg:block">
+                            <ul class="flex xl:text-sm uppercase font-bold 
+                                text-opacity-80 text-white 
+                                text-xs
+                                space-x-7
+                                xl:space-x-12">
+                                <li><a href="#">urgent care</a></li>
+                                <li><a href="#">primary care</a></li>
+                                <li><a href="#">Behavioral</a></li>
+                                <li><a href="#">Pediatrics</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- nav button -->
+                <div class="col-span-6 lg:col-span-3 xl:col-span-3 ">
+                    <div class="flex justify-end items-center ">
+                        <div class="hidden lg:block">
+                            <a href="#" class="btn bg-secondary text-white">Get Started</a>
+                        </div>
+                        <div class="ml-5 xl:ml-12">
+                            <!-- menu button -->
+                            <button id="menuBtn" type="button" class="text-white text-3xl">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile nav -->
+        <!-- nav -->
+        <nav class="py-4 px-4 lg:hidden border-t border-white">
+            <ul class="mobile-menu flex flex-nowrap overflow-x-auto text-sm uppercase font-bold 
+                                        text-opacity-80 text-white 
+                                        space-x-6
+                                        ">
+                <li><a href="#">urgent care</a></li>
+                <li><a href="#">primary care</a></li>
+                <li><a href="#">Behavioral</a></li>
+                <li><a href="#">Pediatrics</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <!-- modal menu -->
+        <div class="modal-menu hide-menu h-screen bg-white shadow-xl w-[340px] absolute top-0 right-0">
+    
+            <div class="flex items-center justify-between px-8 p-5 border-b border-black border-opacity-90">
+                <div>
+                    <a href="#" class="btn bg-secondary text-white">Get Started</a>
+                </div>
+                <div class="text-2xl closeMenu pr-10">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <!-- menu -->
+            <nav class="mt-14">
+                <ul class="px-10 text-primary text-2xl font-bold uppercase space-y-10 select-none">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Health Resources</a></li>
+                </ul>
+            </nav>
+            <div class="absolute bottom-10 left-0 px-5 w-full">
+                <div class="border-t border-black border-opacity-80  w-full ">
+                    <div class="mt-5 ml-5">
+                        <img src="img/menu-bottom.png" alt="menu" class="w-[100px] shadow-xl">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- header end -->
+    <main>
+        <!-- contact -->
+        <section>
+            <div>
+                <!-- section heading -->
+                <div class="bg-purple py-3">
+                    <div class="max-w-[960px] mx-auto">
+                        <h2 class="text-white text-[34px] font-light capitalize pl-6">
+                            <span>connect with us</span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- section body -->
+
+                <div class="max-w-[960px] mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-7 px-5">
+                        <div class="my-7">
+                            <h3 class="text-text text-sm italic">Learn how we can bring telehealth to your business.
+                                Complete the form below and we’ll be in touch soon.</h3>
+
+                            <form action="#" class="mt-7">
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <input type="text" placeholder="first name">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="last name">
+                                    </div>
+                                </div>
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <input type="text" placeholder="company  name">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="job title">
+                                    </div>
+                                </div>
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <input type="email" placeholder="work email address">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="phone number">
+                                    </div>
+                                </div>
+                                <div>
+                                    <select name="#" id="#">
+                                        <option value="type">Business Type</option>
+                                        <option value="broker">Broker/Consultant</option>
+                                        <option value="employer">Employer</option>
+                                        <option value="government">Government</option>
+                                        <option value="health plan">Health Plan</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="#" id="#">
+                                        <option value="unitedstates">United States</option>
+                                        <option value="albenia">Albenia</option>
+                                        <option value="island">Island</option>
+                                        <option value="algeria">Algeria</option>
+                                        <option value="angola">Angola</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="#" id="#">
+                                        <option value="state">State</option>
+                                        <option value="alabama">Alabama</option>
+                                        <option value="alaska">Alaska</option>
+                                        <option value="california">California</option>
+                                        <option value="colorado">Colorado</option>
+                                        <option value="indiana">Indiana</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <textarea rows="4" placeholder="how can we help you?"></textarea>
+                                </div>
+                                <div class="my-2  border border-black border-opacity-10">
+                                    <div class="border-b p-2 px-4 border-black border-opacity-20">
+                                        <p class="text-black text-opacity-80">I agree to receive emails from Amwell.</p>
+                                    </div>
+                                    <div class="flex justify-start px-2">
+                                        <div>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5 text-center">
+                                    <button
+                                        class="bg-green px-16 rounded py-1 capitalize text-lg font-semibold text-white"
+                                        type="submit">submit</button>
+                                </div>
+                            </form>
+                            <div class="mt-4">
+                                <div class="text-center italic text-black text-opacity-60">
+                                    <a href="#" class="text-primary">Click here</a> to read our privacy policy.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block">
+                            <div class="-mt-[75px]">
+                                <img src="img/contact.jpg" alt="contact">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- footer start -->
+    <footer>
+        <div class="grid grid-cols-12 gap-0">
+            <div class="col-span-4 pt-[70px] pl-[28px] bg-gray hidden lg:block">
+                <div>
+                    <div class="mb-8">
+                        <img src="img/logo-black.png" class="max-w-[176px]" alt="logo">
+                    </div>
+                    <ul class="flex text-secondary text-xl space-x-8">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <div class="mt-6">
+                        <p class="text-primary text-sm leading-[22px] font-semibold">&copy;2021 Md On Demand. All rights
+                            reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8 bg-primary pl-6 lg:pl-[80px] pt-[70px] pb-[65px]">
+                <div class="lg:max-w-[530px]">
+                    <div class="grid gap-0 grid-cols-2">
+                        <div>
+                            <div>
+                                <!-- widget title -->
+                                <h2 class="widget-title">Programs</h2>
+                            </div>
+                            <div class="ml-3">
+                                <!-- widget menu -->
+                                <ul class="widget-nav-menu">
+                                    <li><a href="#">Primary Care</a></li>
+                                    <li><a href="#">Urgent Care</a></li>
+                                    <li><a href="#">Behavioral</a></li>
+                                    <li><a href="#">Pediatrics</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- widget title -->
+                                <h2 class="widget-title">Company</h2>
+                            </div>
+                            <div class="ml-3">
+                                <!-- widget menu -->
+                                <ul class="widget-nav-menu">
+                                    <li><a href="#">About MD On Demand</a></li>
+                                    <li><a href="#">Get Started</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+    <script src="main.js"></script>
+</body>
+
+</html>
